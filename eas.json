@@ -18,10 +18,19 @@
       }
     },
     "production": {
-      "autoIncrement": true
+      "autoIncrement": true,
+      "distribution": "store",
+      "ios": {
+        "image": "latest"
+      }
     }
   },
   "submit": {
-    "production": {}
+    "production": {
+      "ios": {
+        "ascAppId": "<fill in App Store Connect app ID before first submit>",
+        "appleTeamId": "JKK698T45G"
+      }
+    }
   }
 }
