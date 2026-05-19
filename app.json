@@ -1,0 +1,25 @@
+{
+  "expo": {
+    "name": "GoFix Provider",
+    "slug": "gofix-provider",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": null,
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "app.gofix.provider",
+      "infoPlist": {
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "GoFix Provider tracks your location to show it to users in real time.",
+        "NSLocationWhenInUseUsageDescription": "GoFix Provider uses your location to show nearby jobs."
+      }
+    },
+    "android": {
+      "package": "app.gofix.provider",
+      "permissions": ["ACCESS_FINE_LOCATION", "ACCESS_BACKGROUND_LOCATION", "CAMERA", "READ_EXTERNAL_STORAGE"]
+    },
+    "plugins": ["expo-location", "expo-notifications"],
+    "sdkVersion": "54.0.0",
+    "extra": { "eas": { "projectId": "your-eas-project-id" } }
+  }
+}
